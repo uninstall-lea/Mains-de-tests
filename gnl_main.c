@@ -16,5 +16,6 @@ int    main(int ac, char **av)
         printf("%s", s1);
         free(s1);
     }
+    close(fd);
     return (0);
 }
