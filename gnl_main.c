@@ -14,5 +14,12 @@ int    main(int ac, char **av)
         free(s1);
     }
     close(fd);
+    fd = open(av[1], O_RDONLY);
+    while ((s1 = get_next_line(fd)) != NULL)
+    {
+        printf("%s", s1);
+        free(s1);
+    }
+    close(fd);
     return (0);
 }
