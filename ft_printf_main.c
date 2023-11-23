@@ -27,6 +27,8 @@ int	main(void)
 	printf("%d\n", printf("   printf: %p / ", &str));
 	ft_printf("%d\n", ft_printf("ft_printf: %p / ", NULL));
 	printf("%d\n\n", printf("   printf: %p / ", NULL));
+	printf("%d\n\n", printf(NULL));
+	ft_printf("%d\n", ft_printf(NULL));
 	
 	/* HEXA_MIN */
 	printf("*********************HEXA_MIN********************************\n");
